@@ -1,0 +1,15 @@
+{
+  "name": "code-review",
+  "type": "skill",
+  "title": "Code Review",
+  "description": "Review a diff for correctness, security, and clarity in priority order, and leave specific, actionable comments. Use when reviewing a PR or self-reviewing before pushing.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/code-review",
+  "install": "/plugin install code-review@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["review", "quality", "workflow"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-12"
+}

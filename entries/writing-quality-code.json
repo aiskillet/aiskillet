@@ -1,0 +1,15 @@
+{
+  "name": "writing-quality-code",
+  "type": "skill",
+  "title": "Writing Quality Code",
+  "description": "Write correct, clear, change-safe code and prove it with tests that actually pin behavior. Use when implementing a feature or fix, refactoring, or deciding what to test.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/writing-quality-code",
+  "install": "/plugin install writing-quality-code@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["quality", "testing", "workflow"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-12"
+}

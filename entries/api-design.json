@@ -1,0 +1,15 @@
+{
+  "name": "api-design",
+  "type": "skill",
+  "title": "API Design",
+  "description": "Design consistent, evolvable HTTP/JSON APIs — resources, status codes, pagination, errors, idempotency, and versioning. Use when creating or reviewing an endpoint.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/api-design",
+  "install": "/plugin install api-design@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["backend", "api", "design"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-12"
+}

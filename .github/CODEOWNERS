@@ -1,0 +1,6 @@
+# Platform code + schema require maintainer review.
+# Community submissions live in entries/ and are reviewed per PR.
+*               @ChinmayMurugkar
+/schema/        @ChinmayMurugkar
+/scripts/       @ChinmayMurugkar
+/.github/       @ChinmayMurugkar

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiskillet.com/schema/entry.schema.json",
+  "title": "AISkillet Entry",
+  "description": "One catalog listing. Points at a skill/plugin/agent/mcp living in a creator's own repo. Derived fields (stars, installs, readme) are added by the build step and must not appear in submissions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "type", "title", "description", "author", "repo", "install", "targets", "license"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique kebab-case slug. Must match the filename (entries/<name>.json)."
+    },
+    "type": {
+      "enum": ["skill", "plugin", "agent", "mcp"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 280,
+      "description": "One line: what it does and when to use it."
+    },
+    "author": {
+      "type": "string",
+      "pattern": "^github:[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$",
+      "description": "GitHub handle, e.g. github:janedoe. Resolves to a creator profile."
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/[^/]+/[^/]+/?$",
+      "description": "Public GitHub repo the listing points at. We never copy the code."
+    },
+    "path": {
+      "type": "string",
+      "description": "Optional subpath within the repo (for monorepos), e.g. skills/api-design."
+    },
+    "install": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "description": "The command a user copies. Must pass the install-safety allowlist (see scripts/validate.mjs)."
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["claude-code", "cursor", "copilot", "codex", "mcp"] }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "maxItems": 8
+    },
+    "license": {
+      "type": "string",
+      "minLength": 2,
+      "description": "SPDX identifier, e.g. MIT."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Set true only after human review (T3). Defaults to false."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
