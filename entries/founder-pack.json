@@ -1,0 +1,16 @@
+{
+  "name": "founder-pack",
+  "type": "plugin",
+  "category": "business",
+  "title": "Founder Pack",
+  "description": "Go to market: positioning and competitive-analysis skills, meeting-notes, and the research-assistant agent.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/founder-pack",
+  "install": "/plugin install founder-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "gtm", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

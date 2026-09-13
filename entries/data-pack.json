@@ -1,0 +1,16 @@
+{
+  "name": "data-pack",
+  "type": "plugin",
+  "category": "data-ml",
+  "title": "Data Pack",
+  "description": "Work with data and LLMs: SQL optimization and prompt-engineering skills plus the sql-writer agent.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/data-pack",
+  "install": "/plugin install data-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "sql", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

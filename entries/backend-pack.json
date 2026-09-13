@@ -1,0 +1,16 @@
+{
+  "name": "backend-pack",
+  "type": "plugin",
+  "category": "coding",
+  "title": "Backend Pack",
+  "description": "Everything for solid backend services in one install: API design, error handling, SQL optimization, input validation, and webhooks.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/backend-pack",
+  "install": "/plugin install backend-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "backend", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

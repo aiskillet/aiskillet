@@ -1,0 +1,16 @@
+{
+  "name": "security-pack",
+  "type": "plugin",
+  "category": "security",
+  "title": "Security Pack",
+  "description": "Harden your app: secrets management and input validation skills plus the security-auditor agent.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/security-pack",
+  "install": "/plugin install security-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "audit", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

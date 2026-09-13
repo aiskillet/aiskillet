@@ -1,0 +1,16 @@
+{
+  "name": "devops-pack",
+  "type": "plugin",
+  "category": "devops",
+  "title": "DevOps Pack",
+  "description": "Ship and operate reliably: Dockerfile best practices, CI/CD pipelines, and secrets management in one install.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/devops-pack",
+  "install": "/plugin install devops-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "ci-cd", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "frontend-pack",
+  "type": "plugin",
+  "category": "design",
+  "title": "Frontend Pack",
+  "description": "Build coherent, accessible UI in one install: design systems and accessibility (a11y).",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/frontend-pack",
+  "install": "/plugin install frontend-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "frontend", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

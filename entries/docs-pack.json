@@ -1,0 +1,16 @@
+{
+  "name": "docs-pack",
+  "type": "plugin",
+  "category": "writing",
+  "title": "Docs Pack",
+  "description": "Write docs people read: technical-writing and README-craft skills plus the docs-generator agent.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/docs-pack",
+  "install": "/plugin install docs-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "docs", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "code-quality-pack",
+  "type": "plugin",
+  "category": "coding",
+  "title": "Code Quality Pack",
+  "description": "Ship better code: review, quality-writing, and refactoring skills plus the PR-reviewer and test-writer agents.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/code-quality-pack",
+  "install": "/plugin install code-quality-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "quality", "bundle"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
