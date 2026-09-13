@@ -13,9 +13,20 @@ const total = entries.length;
       <span class="hero-badge"><span class="dot"></span>{total} skills · open source &amp; community-driven</span>
       <h1>Cook up your <span class="accent">agents</span>.</h1>
       <p>
-        Discover and install AI skills, plugins, agents, and MCP servers — into
-        Claude Code, Cursor, and the tools you already use. One command, straight from the source.
+        Write a skill once — <b>install it into any tool</b> with one command.
+        Claude Code, Cursor, MCP, and more. Not just a directory: a portable runtime.
       </p>
+
+      <div class="hero-cli">
+        <div class="term">
+          <span class="term-prompt">$</span>
+          <code id="hero-cmd">npx @aiskillet/cli add code-review --target cursor</code>
+          <button class="copy-btn small" data-copy="npx @aiskillet/cli add code-review --target cursor">Copy</button>
+        </div>
+        <p class="hero-cli-sub">
+          One command · installs into <b>Claude&nbsp;Code</b>, <b>Cursor</b> &amp; more · <a href="/#how">how it works ↓</a>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -65,6 +76,32 @@ const total = entries.length;
         ))}
       </div>
     </noscript>
+  </section>
+
+  <section class="how wrap" id="how">
+    <h2>More than a directory.</h2>
+    <p class="how-sub">
+      AISkillet is the registry <b>and</b> the runtime. The
+      <a href="https://github.com/aiskillet/cli" target="_blank" rel="noopener">skillet CLI</a>
+      compiles any skill into whatever tool you use — <b>write once, run anywhere</b>.
+    </p>
+    <div class="steps">
+      <div class="step">
+        <span class="step-n">1</span>
+        <h3>Find</h3>
+        <p>Search the marketplace for a skill, plugin, agent, or MCP server.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">2</span>
+        <h3>Install with one command</h3>
+        <p><code>skillet add &lt;name&gt; --target &lt;tool&gt;</code></p>
+      </div>
+      <div class="step">
+        <span class="step-n">3</span>
+        <h3>It runs in your tool</h3>
+        <p>Compiled to Claude Code, Cursor, or AGENTS.md — natively. No copy-paste.</p>
+      </div>
+    </div>
   </section>
 </Base>
 
@@ -186,6 +223,16 @@ const total = entries.length;
       state.sort = (e.target as HTMLSelectElement).value; render();
     });
     $("load-more").addEventListener("click", () => { state.page++; render(); });
+
+    // copy-to-clipboard for any [data-copy] button (hero CLI command, etc.)
+    document.addEventListener("click", async (ev) => {
+      const b = (ev.target as HTMLElement).closest("[data-copy]") as HTMLElement | null;
+      if (!b) return;
+      await navigator.clipboard.writeText(b.getAttribute("data-copy") ?? "");
+      const prev = b.textContent;
+      b.textContent = "Copied!";
+      setTimeout(() => (b.textContent = prev), 1400);
+    });
 
     document.querySelector(".facets")!.addEventListener("click", (ev) => {
       const btn = (ev.target as HTMLElement).closest("button");
