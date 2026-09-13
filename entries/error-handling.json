@@ -1,0 +1,16 @@
+{
+  "name": "error-handling",
+  "type": "skill",
+  "category": "coding",
+  "title": "Error Handling",
+  "description": "Handle errors deliberately — recover vs propagate vs fail-fast, actionable messages, and never swallow exceptions. Use when adding try/catch or reviewing failure paths.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/error-handling",
+  "install": "/plugin install error-handling@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "reliability", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "input-validation",
+  "type": "skill",
+  "category": "security",
+  "title": "Input Validation",
+  "description": "Validate untrusted input at the boundary — allowlist, parse-don't-validate, enforce types/limits before it reaches your logic. Use when handling user input or reviewing injection risks.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/input-validation",
+  "install": "/plugin install input-validation@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "validation", "api"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

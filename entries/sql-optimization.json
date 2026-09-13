@@ -1,0 +1,16 @@
+{
+  "name": "sql-optimization",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "SQL Optimization",
+  "description": "Make slow queries fast — read the query plan, index for the access pattern, and kill N+1s and needless scans. Use when a query is slow or designing indexes.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/sql-optimization",
+  "install": "/plugin install sql-optimization@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "sql", "performance"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

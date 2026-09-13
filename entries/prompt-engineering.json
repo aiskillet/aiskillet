@@ -1,0 +1,16 @@
+{
+  "name": "prompt-engineering",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Prompt Engineering",
+  "description": "Write prompts that are specific, structured, and testable — clear role/task, examples, output contracts, and iteration against evals. Use when writing or debugging an LLM prompt.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/prompt-engineering",
+  "install": "/plugin install prompt-engineering@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "llm", "ai"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dockerfile-best-practices",
+  "type": "skill",
+  "category": "devops",
+  "title": "Dockerfile Best Practices",
+  "description": "Write small, fast, secure images — multi-stage builds, layer caching, non-root users, pinned versions. Use when writing/reviewing a Dockerfile or debugging bloated builds.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/dockerfile-best-practices",
+  "install": "/plugin install dockerfile-best-practices@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "docker", "containers"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

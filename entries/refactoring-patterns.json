@@ -1,0 +1,16 @@
+{
+  "name": "refactoring-patterns",
+  "type": "skill",
+  "category": "coding",
+  "title": "Refactoring Patterns",
+  "description": "Improve code structure without changing behavior — safe, incremental moves backed by tests. Use when code is hard to change or before adding a feature to messy code.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/refactoring-patterns",
+  "install": "/plugin install refactoring-patterns@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "refactoring", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

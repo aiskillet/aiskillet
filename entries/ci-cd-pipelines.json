@@ -1,0 +1,16 @@
+{
+  "name": "ci-cd-pipelines",
+  "type": "skill",
+  "category": "devops",
+  "title": "CI/CD Pipelines",
+  "description": "Design fast, reliable CI/CD — cache deps, fail fast, stay reproducible, and gate deploys safely. Use when writing/reviewing a pipeline or when CI is slow or flaky.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/ci-cd-pipelines",
+  "install": "/plugin install ci-cd-pipelines@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "ci-cd", "automation"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
