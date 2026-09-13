@@ -1,0 +1,16 @@
+{
+  "name": "everything",
+  "type": "mcp",
+  "category": "integrations",
+  "title": "Everything MCP",
+  "description": "Official MCP reference server exercising prompts, resources, and tools — a test/demo server for exploring MCP features. Use to learn or debug MCP integrations.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/everything",
+  "install": "claude mcp add everything -- npx -y @modelcontextprotocol/server-everything",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "reference", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

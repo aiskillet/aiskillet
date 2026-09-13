@@ -1,0 +1,16 @@
+{
+  "name": "time",
+  "type": "mcp",
+  "category": "productivity",
+  "title": "Time MCP",
+  "description": "Official MCP server for time and timezone conversions. Use to give an agent reliable current-time and cross-timezone calculations.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/time",
+  "install": "claude mcp add time -- uvx mcp-server-time",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "time", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

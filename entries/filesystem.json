@@ -1,0 +1,16 @@
+{
+  "name": "filesystem",
+  "type": "mcp",
+  "category": "integrations",
+  "title": "Filesystem MCP",
+  "description": "Official MCP server for secure file operations with configurable access controls — read, write, and search files. Use to give an agent scoped local filesystem access.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/filesystem",
+  "install": "claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem ~/",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "files", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

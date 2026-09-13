@@ -27,22 +27,36 @@ const sourceUrl = entry.path ? `${entry.repo}/tree/main/${entry.path}` : entry.r
     <h1>{entry.title}</h1>
     <p class="lede">{entry.description}</p>
 
-    <div class="install-box">
-      <label>Install with the skillet CLI</label>
-      <div class="target-tabs" id="tabs">
-        <button data-t="claude-code" class="on">Claude Code</button>
-        <button data-t="cursor">Cursor</button>
-        <button data-t="agents-md">AGENTS.md</button>
+    {entry.type === "mcp" ? (
+      <div class="install-box">
+        <label>Add this MCP server</label>
+        <div class="install-cmd">
+          <code id="install">{entry.install}</code>
+          <button class="copy-btn" id="copy">Copy</button>
+        </div>
+        <p class="install-hint">
+          A real MCP server that runs as an external process in Claude Code. Requires its runtime
+          (Node via <code>npx</code> or Python via <code>uvx</code>). Source: <a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl.replace("https://github.com/", "")}</a>.
+        </p>
       </div>
-      <div class="install-cmd">
-        <code id="install">npx @aiskillet/cli add {entry.name} --target claude-code</code>
-        <button class="copy-btn" id="copy">Copy</button>
+    ) : (
+      <div class="install-box">
+        <label>Install with the skillet CLI</label>
+        <div class="target-tabs" id="tabs">
+          <button data-t="claude-code" class="on">Claude Code</button>
+          <button data-t="cursor">Cursor</button>
+          <button data-t="agents-md">AGENTS.md</button>
+        </div>
+        <div class="install-cmd">
+          <code id="install">npx @aiskillet/cli add {entry.name} --target claude-code</code>
+          <button class="copy-btn" id="copy">Copy</button>
+        </div>
+        <p class="install-hint">
+          Install once: <code>npm i -g @aiskillet/cli</code> — then it works in whatever tool you use.
+          The same skill, compiled to each target's native format.
+        </p>
       </div>
-      <p class="install-hint">
-        Install once: <code>npm i -g @aiskillet/cli</code> — then it works in whatever tool you use.
-        The same skill, compiled to each target's native format.
-      </p>
-    </div>
+    )}
 
     <dl>
       <dt>Author</dt>

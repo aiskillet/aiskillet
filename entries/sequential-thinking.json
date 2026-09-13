@@ -1,0 +1,16 @@
+{
+  "name": "sequential-thinking",
+  "type": "mcp",
+  "category": "productivity",
+  "title": "Sequential Thinking MCP",
+  "description": "Official MCP server for structured, step-by-step problem solving through revisable thought sequences. Use for complex multi-step reasoning and planning.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/sequentialthinking",
+  "install": "claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "reasoning", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

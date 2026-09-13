@@ -1,0 +1,16 @@
+{
+  "name": "memory",
+  "type": "mcp",
+  "category": "data-ml",
+  "title": "Memory MCP",
+  "description": "Official MCP server providing a knowledge-graph-based persistent memory system. Use to let an agent remember facts and relationships across sessions.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/memory",
+  "install": "claude mcp add memory -- npx -y @modelcontextprotocol/server-memory",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "memory", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

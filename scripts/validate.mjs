@@ -20,6 +20,8 @@ const SCHEMA_PATH = join(ROOT, "schema", "entry.schema.json");
 // Allowed: our slash-command install forms. Rejected: anything that could run
 // arbitrary code on the user's machine.
 const INSTALL_ALLOW = /^\/(plugin|skill|agent|mcp)\s+[\w@/.\- ]+$/;
+// MCP servers install via `claude mcp add … -- <runner> <pkg> [args]` (mcp type only).
+const INSTALL_ALLOW_MCP = /^claude mcp add [\w@/.\-~ ]+$/;
 const INSTALL_DENY = /(curl|wget|bash|sh\s+-c|eval|base64|\||;|&&|`|\$\()/i;
 
 function loadJson(path) {
@@ -59,7 +61,10 @@ export function validateAll() {
     seenNames.add(entry.name);
 
     // 4. Install-command safety allowlist
-    if (INSTALL_DENY.test(entry.install) || !INSTALL_ALLOW.test(entry.install)) {
+    const installOk =
+      INSTALL_ALLOW.test(entry.install) ||
+      (entry.type === "mcp" && INSTALL_ALLOW_MCP.test(entry.install));
+    if (INSTALL_DENY.test(entry.install) || !installOk) {
       errors.push(
         `${where}: install command failed safety allowlist: ${JSON.stringify(entry.install)}`
       );

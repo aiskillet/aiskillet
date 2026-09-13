@@ -1,0 +1,16 @@
+{
+  "name": "git",
+  "type": "mcp",
+  "category": "coding",
+  "title": "Git MCP",
+  "description": "Official MCP server with tools to read, search, and manipulate Git repositories. Use to let an agent inspect history, diffs, and branches.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/git",
+  "install": "claude mcp add git -- uvx mcp-server-git",
+  "targets": ["claude-code"],
+  "tags": ["coding", "git", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

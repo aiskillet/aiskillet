@@ -1,0 +1,16 @@
+{
+  "name": "fetch",
+  "type": "mcp",
+  "category": "integrations",
+  "title": "Fetch MCP",
+  "description": "Official MCP server for fetching web content and converting it to clean markdown for LLM use. Use to let an agent read web pages.",
+  "author": "github:modelcontextprotocol",
+  "repo": "https://github.com/modelcontextprotocol/servers",
+  "path": "src/fetch",
+  "install": "claude mcp add fetch -- uvx mcp-server-fetch",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "web", "mcp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
