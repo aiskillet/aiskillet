@@ -1,0 +1,16 @@
+{
+  "name": "positioning",
+  "type": "skill",
+  "category": "business",
+  "title": "Positioning",
+  "description": "Define what you are, for whom, and why you're different — so messaging writes itself. Use when crafting a value prop, landing page, pitch, or product category.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/positioning",
+  "install": "/plugin install positioning@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "marketing", "strategy"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

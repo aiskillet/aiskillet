@@ -1,0 +1,16 @@
+{
+  "name": "readme-craft",
+  "type": "skill",
+  "category": "writing",
+  "title": "README Craft",
+  "description": "Write a README that earns adoption — what/why in one line, fast install, a real example, then details. Use when creating or overhauling a project README.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/readme-craft",
+  "install": "/plugin install readme-craft@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "docs", "open-source"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

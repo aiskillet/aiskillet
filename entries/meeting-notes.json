@@ -1,0 +1,16 @@
+{
+  "name": "meeting-notes",
+  "type": "skill",
+  "category": "productivity",
+  "title": "Meeting Notes",
+  "description": "Capture meetings so they drive action — decisions, owners, and next steps, not a transcript. Use when taking notes in or summarizing a meeting.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/meeting-notes",
+  "install": "/plugin install meeting-notes@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "notes", "communication"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

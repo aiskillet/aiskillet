@@ -1,0 +1,16 @@
+{
+  "name": "accessibility-a11y",
+  "type": "skill",
+  "category": "design",
+  "title": "Accessibility (a11y)",
+  "description": "Build interfaces everyone can use — semantic HTML, keyboard support, focus, contrast, and labels. Use when building UI components or auditing a page for accessibility.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/accessibility-a11y",
+  "install": "/plugin install accessibility-a11y@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "accessibility", "frontend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

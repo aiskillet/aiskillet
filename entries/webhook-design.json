@@ -1,0 +1,16 @@
+{
+  "name": "webhook-design",
+  "type": "skill",
+  "category": "integrations",
+  "title": "Webhook Design",
+  "description": "Design webhooks that are reliable and secure — signed payloads, idempotency, retries, and versioning — on both sender and receiver side. Use when building or consuming webhooks.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/webhook-design",
+  "install": "/plugin install webhook-design@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "api", "webhooks"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

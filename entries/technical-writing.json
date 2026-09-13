@@ -1,0 +1,16 @@
+{
+  "name": "technical-writing",
+  "type": "skill",
+  "category": "writing",
+  "title": "Technical Writing",
+  "description": "Write clear technical docs — lead with the reader's goal, be concrete, and structure for scanning. Use when writing docs, guides, RFCs, or explaining a system.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/technical-writing",
+  "install": "/plugin install technical-writing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "docs", "communication"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "competitive-analysis",
+  "type": "skill",
+  "category": "research",
+  "title": "Competitive Analysis",
+  "description": "Study competitors to find real positioning gaps — structured, evidence-based, and honest. Use when sizing a market, planning a product, or preparing a strategy doc.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/competitive-analysis",
+  "install": "/plugin install competitive-analysis@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "strategy", "business"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

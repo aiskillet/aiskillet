@@ -1,0 +1,16 @@
+{
+  "name": "design-systems",
+  "type": "skill",
+  "category": "design",
+  "title": "Design Systems",
+  "description": "Build and use a design system — tokens, components, and consistent patterns so UI stays coherent and fast to build. Use when creating components or defining tokens.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/design-systems",
+  "install": "/plugin install design-systems@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "ui", "frontend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
