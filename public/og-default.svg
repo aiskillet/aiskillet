@@ -1,11 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#fbf7f2"/>
-  <g transform="translate(90,240)">
-    <rect width="72" height="72" rx="16" fill="#e0632b"/>
-    <circle cx="32" cy="38" r="17" fill="none" stroke="#fff" stroke-width="5"/>
-    <rect x="47" y="35" width="20" height="7" rx="3" fill="#fff"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#fb703a" stop-opacity="0.22"/>
+      <stop offset="70%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b9b9b9"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9a5a"/>
+      <stop offset="100%" stop-color="#fb703a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(90,238)">
+    <rect width="76" height="76" rx="17" fill="url(#ember)"/>
+    <circle cx="33" cy="40" r="18" fill="none" stroke="#140a05" stroke-width="5"/>
+    <rect x="49" y="37" width="21" height="7" rx="3" fill="#140a05"/>
   </g>
-  <text x="90" y="230" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="88" font-weight="700" fill="#241c15">AI<tspan fill="#e0632b">Skillet</tspan></text>
-  <text x="90" y="400" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#7b6f62">The marketplace for AI skills, plugins &amp; agents.</text>
-  <text x="90" y="460" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#7b6f62">Cook up your agents — one command.</text>
+  <text x="90" y="232" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="92" font-weight="800" letter-spacing="-3" fill="url(#ink)">AI<tspan fill="url(#ember)">Skillet</tspan></text>
+  <text x="90" y="402" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#a0a0a0">The marketplace for AI skills, plugins &amp; agents.</text>
+  <text x="90" y="462" font-family="Inter, -apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#a0a0a0">Write once. Install into any tool.</text>
 </svg>
