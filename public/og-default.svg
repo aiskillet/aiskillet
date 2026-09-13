@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbf7f2"/>
+  <g transform="translate(90,240)">
+    <rect width="72" height="72" rx="16" fill="#e0632b"/>
+    <circle cx="32" cy="38" r="17" fill="none" stroke="#fff" stroke-width="5"/>
+    <rect x="47" y="35" width="20" height="7" rx="3" fill="#fff"/>
+  </g>
+  <text x="90" y="230" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="88" font-weight="700" fill="#241c15">AI<tspan fill="#e0632b">Skillet</tspan></text>
+  <text x="90" y="400" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#7b6f62">The marketplace for AI skills, plugins &amp; agents.</text>
+  <text x="90" y="460" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="40" fill="#7b6f62">Cook up your agents — one command.</text>
+</svg>

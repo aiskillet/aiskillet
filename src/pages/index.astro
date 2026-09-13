@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const entries = (await getCollection("entries")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+const types = ["all", "skill", "plugin", "agent", "mcp"];
+---
+
+<Base>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Cook up your agents.</h1>
+      <p>
+        Discover and install AI skills, plugins, agents, and MCP servers — into
+        Claude Code and the tools you already use. One command, straight from the source.
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap" id="catalog">
+    <div class="controls">
+      <input
+        id="search"
+        class="search"
+        type="search"
+        placeholder="Search skills, plugins, agents…"
+        autocomplete="off"
+        aria-label="Search the catalog"
+      />
+      <div class="filters" role="group" aria-label="Filter by type">
+        {types.map((t) => (
+          <button class="chip" data-type={t} aria-pressed={t === "all" ? "true" : "false"}>
+            {t === "all" ? "All" : t.charAt(0).toUpperCase() + t.slice(1) + "s"}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <p class="count"><span id="count">{entries.length}</span> listings</p>
+
+    <div class="grid" id="grid">
+      {entries.map((e) => (
+        <a
+          class="card"
+          href={`/${e.data.name}`}
+          data-name={e.data.name}
+          data-type={e.data.type}
+          data-title={e.data.title.toLowerCase()}
+          data-desc={e.data.description.toLowerCase()}
+          data-tags={e.data.tags.join(" ").toLowerCase()}
+        >
+          <div class="card-top">
+            <div class="badges">
+              <span class="tag-type">{e.data.type}</span>
+              {e.data.verified && <span class="verified">✓ Verified</span>}
+            </div>
+          </div>
+          <h3>{e.data.title}</h3>
+          <p>{e.data.description}</p>
+          <div class="tags">
+            {e.data.tags.map((t) => <span class="t">{t}</span>)}
+          </div>
+        </a>
+      ))}
+    </div>
+    <p class="empty" id="empty">No listings match your search.</p>
+  </section>
+</Base>
+
+<script>
+  const search = document.getElementById("search") as HTMLInputElement;
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>(".chip"));
+  const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
+  const countEl = document.getElementById("count")!;
+  const emptyEl = document.getElementById("empty")!;
+  let activeType = "all";
+
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    let visible = 0;
+    for (const card of cards) {
+      const typeOk = activeType === "all" || card.dataset.type === activeType;
+      const hay =
+        (card.dataset.title ?? "") + " " +
+        (card.dataset.desc ?? "") + " " +
+        (card.dataset.tags ?? "") + " " +
+        (card.dataset.name ?? "");
+      const textOk = q === "" || hay.includes(q);
+      const show = typeOk && textOk;
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    }
+    countEl.textContent = String(visible);
+    emptyEl.style.display = visible === 0 ? "block" : "none";
+  }
+
+  search.addEventListener("input", apply);
+  chips.forEach((chip) =>
+    chip.addEventListener("click", () => {
+      activeType = chip.dataset.type ?? "all";
+      chips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
+      apply();
+    })
+  );
+</script>

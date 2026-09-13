@@ -1,0 +1,65 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("entries");
+  return entries.map((e) => ({
+    params: { name: e.data.name },
+    props: { entry: e.data },
+  }));
+}
+
+const { entry } = Astro.props;
+const author = entry.author.replace(/^github:/, "");
+const sourceUrl = entry.path ? `${entry.repo}/tree/main/${entry.path}` : entry.repo;
+---
+
+<Base title={`${entry.title} — AISkillet`} description={entry.description}>
+  <section class="detail wrap">
+    <a class="back" href="/">← Back to catalog</a>
+
+    <div class="badges" style="margin-top:14px">
+      <span class="tag-type">{entry.type}</span>
+      {entry.verified && <span class="verified">✓ Verified</span>}
+    </div>
+
+    <h1>{entry.title}</h1>
+    <p class="lede">{entry.description}</p>
+
+    <div class="install-box">
+      <label>Install</label>
+      <div class="install-cmd">
+        <code id="install">{entry.install}</code>
+        <button class="copy-btn" id="copy" data-cmd={entry.install}>Copy</button>
+      </div>
+    </div>
+
+    <dl>
+      <dt>Author</dt>
+      <dd><a href={`https://github.com/${author}`} target="_blank" rel="noopener">@{author}</a></dd>
+      <dt>Source</dt>
+      <dd><a href={sourceUrl} target="_blank" rel="noopener">{sourceUrl.replace("https://github.com/", "")}</a></dd>
+      <dt>Targets</dt>
+      <dd>{entry.targets.join(", ")}</dd>
+      <dt>License</dt>
+      <dd>{entry.license}</dd>
+      {entry.tags.length > 0 && (
+        <>
+          <dt>Tags</dt>
+          <dd>{entry.tags.join(", ")}</dd>
+        </>
+      )}
+    </dl>
+  </section>
+</Base>
+
+<script>
+  const btn = document.getElementById("copy") as HTMLButtonElement | null;
+  btn?.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(btn.dataset.cmd ?? "");
+    const prev = btn.textContent;
+    btn.textContent = "Copied!";
+    setTimeout(() => (btn.textContent = prev), 1400);
+  });
+</script>

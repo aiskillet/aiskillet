@@ -16,7 +16,8 @@ import { validateAll } from "./validate.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const ENTRIES_DIR = join(ROOT, "entries");
-const DIST_DIR = join(ROOT, "dist");
+// Emit into public/ so Astro serves them at /index.json and /marketplace.json
+const OUT_DIR = join(ROOT, "public");
 
 const MARKETPLACE_NAME = "aiskillet";
 
@@ -72,8 +73,8 @@ const marketplace = {
 };
 
 // --- 5. write ------------------------------------------------------------
-mkdirSync(DIST_DIR, { recursive: true });
-writeFileSync(join(DIST_DIR, "index.json"), JSON.stringify(index, null, 2) + "\n");
-writeFileSync(join(DIST_DIR, "marketplace.json"), JSON.stringify(marketplace, null, 2) + "\n");
+mkdirSync(OUT_DIR, { recursive: true });
+writeFileSync(join(OUT_DIR, "index.json"), JSON.stringify(index, null, 2) + "\n");
+writeFileSync(join(OUT_DIR, "marketplace.json"), JSON.stringify(marketplace, null, 2) + "\n");
 
-console.log(`✓ Built ${entries.length} entr${entries.length === 1 ? "y" : "ies"} → dist/index.json, dist/marketplace.json`);
+console.log(`✓ Built ${entries.length} entr${entries.length === 1 ? "y" : "ies"} → public/index.json, public/marketplace.json`);

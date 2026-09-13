@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = "AISkillet — the marketplace for AI skills, plugins & agents",
+  description = "Discover and install AI skills, plugins, agents, and MCP servers into Claude Code and the tools you already use.",
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL("/og-default.svg", Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Twitter (shareable links) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AISkillet" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <span class="logo">🍳</span> AI<em>Skillet</em>
+        </a>
+        <nav class="nav">
+          <a href="/#catalog">Browse</a>
+          <a href="https://github.com/aiskillet/aiskillet" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn-primary" href="https://github.com/aiskillet/aiskillet/blob/main/.github/PULL_REQUEST_TEMPLATE/new-entry.md" target="_blank" rel="noopener">Submit yours</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>🍳 AISkillet — cook up your agents.</span>
+        <span>
+          <a href="https://github.com/aiskillet/aiskillet" target="_blank" rel="noopener">Platform</a>
+          · <a href="https://github.com/aiskillet/cookbook" target="_blank" rel="noopener">Cookbook</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

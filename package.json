@@ -6,7 +6,13 @@
   "description": "AISkillet — a marketplace for AI skills, plugins, agents, and MCP servers.",
   "scripts": {
     "validate": "node scripts/validate.mjs",
-    "build": "node scripts/build.mjs"
+    "catalog": "node scripts/build.mjs",
+    "dev": "npm run catalog && astro dev",
+    "build": "npm run catalog && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.6.1"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
