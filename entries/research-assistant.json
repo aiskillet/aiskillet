@@ -1,0 +1,16 @@
+{
+  "name": "research-assistant",
+  "type": "agent",
+  "category": "research",
+  "title": "Research Assistant",
+  "description": "Researches a question across sources, evaluates credibility, and synthesizes a cited, balanced answer. Use for market/technical research or fact-finding that needs sources.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/research-assistant",
+  "install": "/plugin install research-assistant@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "web", "analysis"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

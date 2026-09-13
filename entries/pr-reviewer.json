@@ -1,0 +1,16 @@
+{
+  "name": "pr-reviewer",
+  "type": "agent",
+  "category": "coding",
+  "title": "PR Reviewer",
+  "description": "Reviews a pull request for correctness, security, and clarity, and leaves prioritized, actionable comments. Use to review changes before merge.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/pr-reviewer",
+  "install": "/plugin install pr-reviewer@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "review", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

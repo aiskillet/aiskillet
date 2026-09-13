@@ -1,0 +1,16 @@
+{
+  "name": "security-auditor",
+  "type": "agent",
+  "category": "security",
+  "title": "Security Auditor",
+  "description": "Audits code for security issues — injection, auth flaws, secret leaks, unsafe dependencies — with concrete, prioritized fixes. Use for a security pass on a change or module.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/security-auditor",
+  "install": "/plugin install security-auditor@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "review", "audit"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sql-writer",
+  "type": "agent",
+  "category": "data-ml",
+  "title": "SQL Writer",
+  "description": "Writes correct, efficient SQL from a request — using the real schema, safe parameters, and index-aware queries. Use to author or optimize a query against a known schema.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/sql-writer",
+  "install": "/plugin install sql-writer@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "sql", "database"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

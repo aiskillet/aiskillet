@@ -1,0 +1,16 @@
+{
+  "name": "refactor-planner",
+  "type": "agent",
+  "category": "coding",
+  "title": "Refactor Planner",
+  "description": "Plans a safe, incremental refactor — sequenced steps that preserve behavior, each independently shippable and testable. Use before refactoring messy or risky code.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/refactor-planner",
+  "install": "/plugin install refactor-planner@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "refactoring", "planning"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

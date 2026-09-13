@@ -1,0 +1,16 @@
+{
+  "name": "test-writer",
+  "type": "agent",
+  "category": "coding",
+  "title": "Test Writer",
+  "description": "Writes focused, meaningful tests — covering the contract, edges, and error paths, and verifying each test can actually fail. Use to add or backfill tests.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/test-writer",
+  "install": "/plugin install test-writer@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "testing", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

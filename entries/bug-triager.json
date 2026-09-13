@@ -1,0 +1,16 @@
+{
+  "name": "bug-triager",
+  "type": "agent",
+  "category": "coding",
+  "title": "Bug Triager",
+  "description": "Reproduces a bug, finds the root cause, and proposes the smallest correct fix with a regression test. Use when investigating a bug report or failing behavior.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/bug-triager",
+  "install": "/plugin install bug-triager@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "debugging", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
