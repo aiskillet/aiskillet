@@ -5,7 +5,7 @@
   "description": "One catalog listing. Points at a skill/plugin/agent/mcp living in a creator's own repo. Derived fields (stars, installs, readme) are added by the build step and must not appear in submissions.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["name", "type", "title", "description", "author", "repo", "install", "targets", "license"],
+  "required": ["name", "type", "category", "title", "description", "author", "repo", "install", "targets", "license"],
   "properties": {
     "name": {
       "type": "string",
@@ -14,6 +14,10 @@
     },
     "type": {
       "enum": ["skill", "plugin", "agent", "mcp"]
+    },
+    "category": {
+      "description": "Broad domain — one per entry. Keep in sync with src/lib/taxonomy.ts.",
+      "enum": ["coding", "devops", "data-ml", "design", "writing", "research", "productivity", "business", "security", "integrations"]
     },
     "title": {
       "type": "string",

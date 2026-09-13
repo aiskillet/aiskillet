@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import EntryCard from "../../components/EntryCard.astro";
+import { CATEGORIES, categoryLabel } from "../../lib/taxonomy";
+
+export async function getStaticPaths() {
+  const all = await getCollection("entries");
+  return CATEGORIES.map((c) => ({
+    params: { category: c.slug },
+    props: {
+      label: c.label,
+      slug: c.slug,
+      entries: all.filter((e) => e.data.category === c.slug).map((e) => e.data),
+    },
+  }));
+}
+
+const { entries, label } = Astro.props;
+---
+
+<Base
+  title={`${label} — AISkillet`}
+  description={`${label} skills, plugins, agents & MCP servers on AISkillet. Install into Claude Code, Cursor and more.`}
+>
+  <section class="browse wrap">
+    <a class="back" href="/">← All listings</a>
+    <h1>{label}</h1>
+    <p class="lede">{entries.length} listing{entries.length === 1 ? "" : "s"} in {label}.</p>
+
+    {entries.length > 0 ? (
+      <div class="grid">
+        {entries.map((e) => <EntryCard entry={e} />)}
+      </div>
+    ) : (
+      <p class="empty" style="display:block">Nothing here yet — <a href="/">browse everything</a>.</p>
+    )}
+
+    <nav class="browse-nav">
+      <span class="facet-label">Categories</span>
+      <div class="facet-chips">
+        {CATEGORIES.map((c) => (
+          <a class="chip" href={`/category/${c.slug}`} aria-pressed={c.label === label}>{c.label}</a>
+        ))}
+      </div>
+    </nav>
+  </section>
+</Base>

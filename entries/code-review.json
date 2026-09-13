@@ -1,6 +1,7 @@
 {
   "name": "code-review",
   "type": "skill",
+  "category": "coding",
   "title": "Code Review",
   "description": "Review a diff for correctness, security, and clarity in priority order, and leave specific, actionable comments. Use when reviewing a PR or self-reviewing before pushing.",
   "author": "github:aiskillet",

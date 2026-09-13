@@ -1,0 +1,32 @@
+---
+import { categoryLabel } from "../lib/taxonomy";
+
+interface Props {
+  entry: {
+    name: string;
+    type: string;
+    category?: string;
+    title: string;
+    description: string;
+    tags?: string[];
+    verified?: boolean;
+  };
+}
+const { entry } = Astro.props;
+---
+<a class="card" href={`/${entry.name}`}>
+  <div class="card-top">
+    <div class="badges">
+      <span class="tag-type">{entry.type}</span>
+      {entry.verified && <span class="verified">✓ Verified</span>}
+    </div>
+    {entry.category && <span class="card-cat">{categoryLabel(entry.category)}</span>}
+  </div>
+  <h3>{entry.title}</h3>
+  <p>{entry.description}</p>
+  {entry.tags && entry.tags.length > 0 && (
+    <div class="tags">
+      {entry.tags.map((t) => <span class="t">{t}</span>)}
+    </div>
+  )}
+</a>
