@@ -88,8 +88,13 @@ a { color: inherit; }
 .copy-btn.small { padding: 6px 13px; font-size: 0.8rem; }
 .hero-cli-sub { font-size: 0.92rem; color: var(--muted); margin: 14px auto 0; }
 .hero-cli-sub b { color: var(--text); font-weight: 600; }
-.hero-cli-sub a { color: var(--accent-ink); text-decoration: none; }
-.hero-cli-sub a:hover { text-decoration: underline; }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 7px; margin-top: 16px; padding: 9px 18px;
+  border-radius: 10px; border: 1px solid var(--border-strong); background: var(--surface-2);
+  color: var(--text); font-size: 0.9rem; text-decoration: none; transition: all .14s;
+}
+.btn-secondary b { font-weight: 600; }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent-ink); transform: translateY(-1px); }
 
 /* How it works */
 .how { padding: 72px 0 30px; border-top: 1px solid var(--border); margin-top: 30px; text-align: center; }
