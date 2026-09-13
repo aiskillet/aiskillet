@@ -66,7 +66,7 @@ const total = entries.length;
     <p class="count"><span id="count">{total}</span> results</p>
 
     <div class="grid" id="grid"></div>
-    <div class="load-more-wrap"><button id="load-more" class="load-more">Show more</button></div>
+    <nav class="pager" id="pager" aria-label="Pagination"></nav>
     <p class="empty" id="empty">No results match your filters.</p>
 
     <noscript>
@@ -116,7 +116,7 @@ const total = entries.length;
     installs?: number; createdAt?: string;
   };
 
-  const PAGE = 48;
+  const PAGE_SIZE = 12;
   const state = {
     q: "", type: "all", category: "all",
     tags: new Set<string>(), sort: "trending", page: 1,
@@ -206,14 +206,36 @@ const total = entries.length;
     </a>`;
   }
 
+  function renderPager(total: number) {
+    const pages = Math.ceil(total / PAGE_SIZE);
+    const el = $("pager");
+    if (pages <= 1) { el.innerHTML = ""; return; }
+    const cur = state.page;
+    const btn = (p: number, label: string, on: boolean, disabled: boolean) =>
+      `<button class="page-btn${on ? " on" : ""}" data-page="${p}"${disabled ? " disabled" : ""} aria-label="Page ${label}">${label}</button>`;
+    const parts = [btn(cur - 1, "‹", false, cur === 1)];
+    const show = new Set([1, pages, cur, cur - 1, cur + 1]);
+    let prev = 0;
+    for (let p = 1; p <= pages; p++) {
+      if (!show.has(p)) continue;
+      if (prev && p - prev > 1) parts.push(`<span class="page-gap">…</span>`);
+      parts.push(btn(p, String(p), p === cur, false));
+      prev = p;
+    }
+    parts.push(btn(cur + 1, "›", false, cur === pages));
+    el.innerHTML = parts.join("");
+  }
+
   function render() {
     renderFacets();
     const list = filtered();
+    const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    state.page = Math.min(Math.max(1, state.page), pages);
     $("count").textContent = String(list.length);
-    const shown = list.slice(0, state.page * PAGE);
-    $("grid").innerHTML = shown.map(card).join("");
+    const start = (state.page - 1) * PAGE_SIZE;
+    $("grid").innerHTML = list.slice(start, start + PAGE_SIZE).map(card).join("");
     ($("empty") as HTMLElement).style.display = list.length ? "none" : "block";
-    ($("load-more") as HTMLElement).style.display = shown.length < list.length ? "inline-flex" : "none";
+    renderPager(list.length);
   }
 
   function wire() {
@@ -221,9 +243,15 @@ const total = entries.length;
       state.q = (e.target as HTMLInputElement).value; state.page = 1; render();
     });
     ($("sort") as HTMLSelectElement).addEventListener("change", (e) => {
-      state.sort = (e.target as HTMLSelectElement).value; render();
+      state.sort = (e.target as HTMLSelectElement).value; state.page = 1; render();
     });
-    $("load-more").addEventListener("click", () => { state.page++; render(); });
+    $("pager").addEventListener("click", (e) => {
+      const b = (e.target as HTMLElement).closest("button.page-btn") as HTMLButtonElement | null;
+      if (!b || b.disabled) return;
+      state.page = Number(b.dataset.page);
+      render();
+      document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
 
     // copy-to-clipboard for any [data-copy] button (hero CLI command, etc.)
     document.addEventListener("click", async (ev) => {
