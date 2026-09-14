@@ -15,6 +15,7 @@ const entries = defineCollection({
     author: z.string(),
     repo: z.string().url(),
     path: z.string().optional(),
+    rev: z.string().optional(),
     install: z.string(),
     targets: z.array(z.enum(["claude-code", "cursor", "copilot", "codex", "mcp"])),
     tags: z.array(z.string()).default([]),

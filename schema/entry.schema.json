@@ -45,6 +45,11 @@
       "type": "string",
       "description": "Optional subpath within the repo (for monorepos), e.g. skills/api-design."
     },
+    "rev": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{7,40}$",
+      "description": "Optional git commit SHA to pin the source to (defeats TOCTOU: install fetches THIS commit, not whatever the branch becomes). Required for verified third-party entries."
+    },
     "install": {
       "type": "string",
       "minLength": 3,

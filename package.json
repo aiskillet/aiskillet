@@ -9,7 +9,8 @@
     "catalog": "node scripts/build.mjs",
     "dev": "npm run catalog && astro dev",
     "build": "npm run catalog && astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "scan": "node scripts/scan.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

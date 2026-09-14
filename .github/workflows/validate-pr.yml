@@ -34,4 +34,5 @@ jobs:
       - run: npm ci
       - name: Tier 1 — manifest validation + install safety
         run: npm run validate
-      # Tier 2 (source scan: gitleaks/trufflehog + semgrep) is added in Phase 1.
+      - name: Tier 2 — content-safety scan of referenced source
+        run: npm run scan
