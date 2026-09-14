@@ -10,6 +10,13 @@
   "install": "/plugin install backend-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["coding", "backend", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "api-design" },
+    { "type": "skill", "name": "error-handling" },
+    { "type": "skill", "name": "sql-optimization" },
+    { "type": "skill", "name": "input-validation" },
+    { "type": "skill", "name": "webhook-design" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

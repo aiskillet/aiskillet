@@ -1,0 +1,16 @@
+{
+  "name": "retry-backoff",
+  "type": "skill",
+  "category": "integrations",
+  "title": "Retry & Backoff",
+  "description": "Retry failures without making outages worse — exponential backoff, jitter, idempotency, and caps. Use when adding retries to network/DB/queue calls or debugging retry storms.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/retry-backoff",
+  "install": "/plugin install retry-backoff@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "resilience", "reliability"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

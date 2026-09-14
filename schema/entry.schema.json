@@ -67,6 +67,19 @@
       "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
       "maxItems": 8
     },
+    "includes": {
+      "type": "array",
+      "description": "For plugin bundles: the member entries this bundle installs (mirror of the repo's plugin.json).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "name"],
+        "properties": {
+          "type": { "enum": ["skill", "agent", "mcp", "plugin"] },
+          "name": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        }
+      }
+    },
     "license": {
       "type": "string",
       "minLength": 2,

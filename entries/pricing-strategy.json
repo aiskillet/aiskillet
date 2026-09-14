@@ -1,0 +1,16 @@
+{
+  "name": "pricing-strategy",
+  "type": "skill",
+  "category": "business",
+  "title": "Pricing Strategy",
+  "description": "Price on value, not cost — choose a model, segment with tiers, and test willingness to pay. Use when setting or revising pricing, packaging tiers, or building a pricing page.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/pricing-strategy",
+  "install": "/plugin install pricing-strategy@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "pricing", "strategy"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

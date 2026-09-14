@@ -1,0 +1,16 @@
+{
+  "name": "cold-outreach",
+  "type": "skill",
+  "category": "business",
+  "title": "Cold Outreach",
+  "description": "Write cold emails that get replies — short, personalized, one clear ask, about them not you. Use for sales, fundraising, partnerships, hiring, or any cold intro.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/cold-outreach",
+  "install": "/plugin install cold-outreach@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "sales", "communication"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

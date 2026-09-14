@@ -1,0 +1,16 @@
+{
+  "name": "investor-update",
+  "type": "skill",
+  "category": "business",
+  "title": "Investor Update",
+  "description": "Write a monthly investor update that builds trust and pulls in help — metrics, wins, lowlights, and specific asks. Use when writing an investor or board update.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/investor-update",
+  "install": "/plugin install investor-update@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "fundraising", "communication"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "oauth-flows",
+  "type": "skill",
+  "category": "integrations",
+  "title": "OAuth 2.0 Flows",
+  "description": "Implement OAuth 2.0 correctly — pick the right flow, use PKCE, and store tokens safely. Use when adding \"sign in with…\", third-party API auth, or reviewing an OAuth integration.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/oauth-flows",
+  "install": "/plugin install oauth-flows@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "oauth", "security"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

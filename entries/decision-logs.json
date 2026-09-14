@@ -1,0 +1,16 @@
+{
+  "name": "decision-logs",
+  "type": "skill",
+  "category": "productivity",
+  "title": "Decision Logs",
+  "description": "Record decisions so the \"why\" survives — context, options, choice, and consequences (ADRs). Use when making a non-trivial technical or product decision.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/decision-logs",
+  "install": "/plugin install decision-logs@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "decisions", "docs"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

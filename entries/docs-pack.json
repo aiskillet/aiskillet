@@ -10,6 +10,11 @@
   "install": "/plugin install docs-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["writing", "docs", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "technical-writing" },
+    { "type": "skill", "name": "readme-craft" },
+    { "type": "agent", "name": "docs-generator" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

@@ -1,0 +1,16 @@
+{
+  "name": "task-breakdown",
+  "type": "skill",
+  "category": "productivity",
+  "title": "Task Breakdown",
+  "description": "Break a big, vague task into small, shippable, ordered steps with clear done-criteria. Use when a task feels too big to start or an estimate feels impossible.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/task-breakdown",
+  "install": "/plugin install task-breakdown@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "planning", "execution"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

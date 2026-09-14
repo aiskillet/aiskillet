@@ -1,0 +1,16 @@
+{
+  "name": "api-client-patterns",
+  "type": "skill",
+  "category": "integrations",
+  "title": "API Client Patterns",
+  "description": "Build resilient API clients — timeouts, retries with backoff, pagination, and typed errors. Use when integrating a third-party API or writing an SDK/wrapper.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/api-client-patterns",
+  "install": "/plugin install api-client-patterns@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "api", "resilience"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

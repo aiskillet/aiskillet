@@ -1,0 +1,16 @@
+{
+  "name": "user-interviews",
+  "type": "skill",
+  "category": "research",
+  "title": "User Interviews",
+  "description": "Run customer interviews that yield truth, not flattery — ask about past behavior, not hypotheticals. Use for customer discovery, validating a problem, or planning research.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/user-interviews",
+  "install": "/plugin install user-interviews@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "discovery", "product"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

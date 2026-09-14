@@ -4,13 +4,25 @@ import Base from "../layouts/Base.astro";
 
 export async function getStaticPaths() {
   const entries = await getCollection("entries");
+  const byName = new Map(entries.map((e) => [e.data.name, e.data]));
   return entries.map((e) => ({
     params: { name: e.data.name },
-    props: { entry: e.data },
+    props: {
+      entry: e.data,
+      members: (e.data.includes ?? []).map((inc) => {
+        const m = byName.get(inc.name);
+        return {
+          name: inc.name,
+          type: inc.type,
+          title: m?.title ?? inc.name,
+          description: m?.description ?? "",
+        };
+      }),
+    },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, members } = Astro.props;
 const author = entry.author.replace(/^github:/, "");
 const sourceUrl = entry.path ? `${entry.repo}/tree/main/${entry.path}` : entry.repo;
 ---
@@ -56,6 +68,24 @@ const sourceUrl = entry.path ? `${entry.repo}/tree/main/${entry.path}` : entry.r
           The same skill, compiled to each target's native format.
         </p>
       </div>
+    )}
+
+    {members.length > 0 && (
+      <section class="bundle">
+        <h2>What's inside <span class="bundle-count">{members.length}</span></h2>
+        <p class="bundle-sub">One install adds every capability below — each also available on its own.</p>
+        <div class="bundle-grid">
+          {members.map((m) => (
+            <a class="bundle-item" href={`/${m.name}`}>
+              <div class="bundle-item-top">
+                <span class="tag-type">{m.type}</span>
+                <span class="bundle-item-name">{m.title}</span>
+              </div>
+              <p>{m.description}</p>
+            </a>
+          ))}
+        </div>
+      </section>
     )}
 
     <dl>

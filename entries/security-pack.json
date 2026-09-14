@@ -10,6 +10,11 @@
   "install": "/plugin install security-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["security", "audit", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "secrets-management" },
+    { "type": "skill", "name": "input-validation" },
+    { "type": "agent", "name": "security-auditor" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

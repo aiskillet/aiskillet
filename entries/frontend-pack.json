@@ -10,6 +10,10 @@
   "install": "/plugin install frontend-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["design", "frontend", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "design-systems" },
+    { "type": "skill", "name": "accessibility-a11y" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

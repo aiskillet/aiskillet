@@ -1,0 +1,16 @@
+{
+  "name": "weekly-planning",
+  "type": "skill",
+  "category": "productivity",
+  "title": "Weekly Planning",
+  "description": "Plan a week that ships the few things that matter — pick priorities, time-block, and protect focus. Use when planning a week/sprint or when everything feels urgent.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/weekly-planning",
+  "install": "/plugin install weekly-planning@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["productivity", "planning", "focus"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

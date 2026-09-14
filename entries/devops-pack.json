@@ -10,6 +10,11 @@
   "install": "/plugin install devops-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["devops", "ci-cd", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "dockerfile-best-practices" },
+    { "type": "skill", "name": "ci-cd-pipelines" },
+    { "type": "skill", "name": "secrets-management" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

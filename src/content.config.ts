@@ -19,6 +19,7 @@ const entries = defineCollection({
     install: z.string(),
     targets: z.array(z.enum(["claude-code", "cursor", "copilot", "codex", "mcp"])),
     tags: z.array(z.string()).default([]),
+    includes: z.array(z.object({ type: z.string(), name: z.string() })).optional(),
     license: z.string(),
     verified: z.boolean().default(false),
     createdAt: z.string().optional(),

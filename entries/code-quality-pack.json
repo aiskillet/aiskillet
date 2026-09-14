@@ -10,6 +10,13 @@
   "install": "/plugin install code-quality-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["coding", "quality", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "code-review" },
+    { "type": "skill", "name": "writing-quality-code" },
+    { "type": "skill", "name": "refactoring-patterns" },
+    { "type": "agent", "name": "pr-reviewer" },
+    { "type": "agent", "name": "test-writer" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"

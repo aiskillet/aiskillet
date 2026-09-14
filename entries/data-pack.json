@@ -10,6 +10,11 @@
   "install": "/plugin install data-pack@aiskillet",
   "targets": ["claude-code"],
   "tags": ["data-ml", "sql", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "sql-optimization" },
+    { "type": "skill", "name": "prompt-engineering" },
+    { "type": "agent", "name": "sql-writer" }
+  ],
   "license": "MIT",
   "verified": true,
   "createdAt": "2026-09-13"
