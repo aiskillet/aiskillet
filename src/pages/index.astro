@@ -5,12 +5,15 @@ import { CATEGORIES } from "../lib/taxonomy";
 
 const entries = await getCollection("entries");
 const total = entries.length;
+const typeCount = new Set(entries.map((e) => e.data.type)).size;
+const catCount = new Set(entries.map((e) => e.data.category)).size;
+const tools = ["Claude Code", "Cursor", "AGENTS.md", "Codex", "Gemini CLI", "MCP", "GitHub"];
 ---
 
 <Base>
   <section class="hero">
     <div class="wrap">
-      <span class="hero-badge"><span class="dot"></span>{total} skills · open source &amp; community-driven</span>
+      <span class="hero-badge"><span class="dot"></span>{total} open-source capabilities · community-driven</span>
       <h1>Cook up your <span class="accent">agents</span>.</h1>
       <p>
         Write a skill once — <b>install it into any tool</b> with one command.
@@ -27,6 +30,27 @@ const total = entries.length;
           One command · installs into <b>Claude&nbsp;Code</b>, <b>Cursor</b> &amp; more
         </p>
         <a class="btn-secondary" href="/#how"><b>How it works</b> ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cred">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><b>{total}</b><span>capabilities</span></div>
+        <div class="stat"><b>{typeCount}</b><span>formats</span></div>
+        <div class="stat"><b>{catCount}</b><span>categories</span></div>
+        <div class="stat"><b>MIT</b><span>open source</span></div>
+      </div>
+    </div>
+    <div class="marquee" aria-label="Compatible tools">
+      <span class="marquee-label">Installs into the tools you already use</span>
+      <div class="marquee-viewport">
+        <div class="marquee-track">
+          {[...tools, ...tools].map((t) => (
+            <span class="marquee-item"><span class="dot2">◆</span>{t}</span>
+          ))}
+        </div>
       </div>
     </div>
   </section>
