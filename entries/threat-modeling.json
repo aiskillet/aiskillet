@@ -1,0 +1,16 @@
+{
+  "name": "threat-modeling",
+  "type": "skill",
+  "category": "security",
+  "title": "Threat Modeling",
+  "description": "Systematically find security risks before shipping — map the system, enumerate threats (STRIDE), and prioritize mitigations. Use when designing a feature/system or reviewing its security posture.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/threat-modeling",
+  "install": "/plugin install threat-modeling@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "design", "risk"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ux-writing",
+  "type": "skill",
+  "category": "design",
+  "title": "UX Writing",
+  "description": "Write clear, helpful interface copy — buttons, labels, empty states, and errors that guide the user. Use when writing UI text, error messages, onboarding, or microcopy.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/ux-writing",
+  "install": "/plugin install ux-writing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "writing", "ux"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

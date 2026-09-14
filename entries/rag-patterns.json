@@ -1,0 +1,16 @@
+{
+  "name": "rag-patterns",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "RAG Patterns",
+  "description": "Build retrieval-augmented generation that actually grounds answers — chunking, embeddings, retrieval quality, and citations. Use when building or debugging a RAG / knowledge-base Q&A system.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/rag-patterns",
+  "install": "/plugin install rag-patterns@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "llm", "rag"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "responsive-layout",
+  "type": "skill",
+  "category": "design",
+  "title": "Responsive Layout",
+  "description": "Build layouts that work on any screen — mobile-first, fluid, with modern CSS (flexbox/grid, clamp, container queries). Use when building responsive UI or fixing layouts that break.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/responsive-layout",
+  "install": "/plugin install responsive-layout@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "css", "frontend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

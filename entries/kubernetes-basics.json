@@ -1,0 +1,16 @@
+{
+  "name": "kubernetes-basics",
+  "type": "skill",
+  "category": "devops",
+  "title": "Kubernetes Basics",
+  "description": "Deploy and run apps on Kubernetes correctly — Deployments, Services, probes, resources, and config. Use when writing manifests, debugging a pod, or reviewing a k8s setup.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/kubernetes-basics",
+  "install": "/plugin install kubernetes-basics@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "kubernetes", "containers"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

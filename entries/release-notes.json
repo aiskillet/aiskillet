@@ -1,0 +1,16 @@
+{
+  "name": "release-notes",
+  "type": "skill",
+  "category": "writing",
+  "title": "Release Notes",
+  "description": "Write release notes that get users to adopt what shipped — lead with value, show don't tell, and guide the upgrade. Use when announcing a release to users or customers.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/release-notes",
+  "install": "/plugin install release-notes@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "release", "communication"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

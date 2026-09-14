@@ -1,0 +1,16 @@
+{
+  "name": "github-actions",
+  "type": "skill",
+  "category": "devops",
+  "title": "GitHub Actions",
+  "description": "Write GitHub Actions workflows that are fast, secure, and maintainable — caching, least-privilege permissions, pinned actions. Use when creating or reviewing a workflow file.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/github-actions",
+  "install": "/plugin install github-actions@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "ci-cd", "automation"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

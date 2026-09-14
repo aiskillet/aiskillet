@@ -1,0 +1,16 @@
+{
+  "name": "data-validation",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Data Validation",
+  "description": "Catch bad data before it corrupts pipelines — schema checks, constraints, and quality tests at ingestion. Use when building data pipelines/ETL or debugging bad downstream data.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/data-validation",
+  "install": "/plugin install data-validation@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "data", "quality"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

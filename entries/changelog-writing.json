@@ -1,0 +1,16 @@
+{
+  "name": "changelog-writing",
+  "type": "skill",
+  "category": "writing",
+  "title": "Changelog Writing",
+  "description": "Write changelogs humans actually read — grouped by change type, user-focused, and versioned. Use when maintaining a CHANGELOG or preparing notes for a release.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/changelog-writing",
+  "install": "/plugin install changelog-writing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "docs", "release"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

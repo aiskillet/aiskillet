@@ -1,0 +1,16 @@
+{
+  "name": "observability-slos",
+  "type": "skill",
+  "category": "devops",
+  "title": "Observability & SLOs",
+  "description": "Make systems observable and define SLOs that matter — the right metrics/logs/traces, user-centric SLIs, and alerting on symptoms. Use when instrumenting a service or setting SLOs/alerts.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/observability-slos",
+  "install": "/plugin install observability-slos@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "observability", "reliability"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
