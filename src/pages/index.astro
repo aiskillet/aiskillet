@@ -128,6 +128,22 @@ const tools = ["Claude Code", "Cursor", "AGENTS.md", "Codex", "Gemini CLI", "MCP
       </div>
     </div>
   </section>
+
+  <section class="trust wrap" id="security">
+    <h2>Secure by design</h2>
+    <p class="how-sub">
+      A skill steers your AI agent with real permissions — so we built for that from day one.
+      <a href="https://github.com/aiskillet/aiskillet/blob/main/architecture/SECURITY.md" target="_blank" rel="noopener">Read the security model →</a>
+    </p>
+    <div class="trust-grid">
+      <div class="trust-card"><span class="trust-ic">🗂️</span><h3>Catalog, not host</h3><p>We index pointers and <b>never execute</b> submitted code — eliminating an entire class of attack.</p></div>
+      <div class="trust-card"><span class="trust-ic">🧾</span><h3>Install-safety allowlist</h3><p>Blocks <code>curl | bash</code>, <code>eval</code>, and shell injection. MCPs get only the narrow <code>claude mcp add</code> form.</p></div>
+      <div class="trust-card"><span class="trust-ic">🔍</span><h3>Scanned in CI</h3><p>Every submission's source is scanned for prompt-injection and secret exfiltration before it can go live.</p></div>
+      <div class="trust-card"><span class="trust-ic">📌</span><h3>Commit-SHA pinning</h3><p>Install a pinned commit — not whatever a branch becomes later. Defeats TOCTOU attacks.</p></div>
+      <div class="trust-card"><span class="trust-ic">👤</span><h3>Human-verified</h3><p>The <span class="verified">✓ Verified</span> badge is gated by human review after automated checks.</p></div>
+      <div class="trust-card"><span class="trust-ic">🔗</span><h3>Source transparency</h3><p>Every listing links to its exact repo &amp; commit. Nothing hidden, nothing bundled.</p></div>
+    </div>
+  </section>
 </Base>
 
 <script>
