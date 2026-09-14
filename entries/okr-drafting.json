@@ -1,0 +1,16 @@
+{
+  "name": "okr-drafting",
+  "type": "skill",
+  "category": "business",
+  "title": "OKR Drafting",
+  "description": "Set goals that focus the team — a qualitative Objective with a few measurable, outcome-based Key Results. Use when planning a quarter, aligning a team, or fixing vague goals.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/okr-drafting",
+  "install": "/plugin install okr-drafting@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "goals", "strategy"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}

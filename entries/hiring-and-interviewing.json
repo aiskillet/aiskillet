@@ -1,0 +1,16 @@
+{
+  "name": "hiring-and-interviewing",
+  "type": "skill",
+  "category": "business",
+  "title": "Hiring & Interviewing",
+  "description": "Hire well — write the role, run structured interviews, assess signal over vibes, and close. Use when defining a role, designing an interview loop, or making a hire decision.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/hiring-and-interviewing",
+  "install": "/plugin install hiring-and-interviewing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["business", "hiring", "people"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-13"
+}
