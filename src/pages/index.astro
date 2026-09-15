@@ -7,7 +7,7 @@ const entries = await getCollection("entries");
 const total = entries.length;
 const typeCount = new Set(entries.map((e) => e.data.type)).size;
 const catCount = new Set(entries.map((e) => e.data.category)).size;
-const tools = ["Claude Code", "Cursor", "AGENTS.md", "Codex", "Gemini CLI", "MCP", "GitHub"];
+const tools = ["Claude Code", "Cursor", "AGENTS.md", "AgentVoy", "Codex", "Gemini CLI", "MCP", "GitHub"];
 ---
 
 <Base>

@@ -68,6 +68,7 @@ npx @aiskillet/cli search testing
 | `claude-code` | native `SKILL.md` / `AGENT.md` | `.claude/skills` · `.claude/agents` (or `~/.claude` with `--global`) |
 | `cursor` | `.mdc` rule | `.cursor/rules/` |
 | `agents-md` | portable `AGENTS.md` skill | `.agents/` |
+| `agentvoy` | reusable agent instructions for an [AgentVoy](https://github.com/agentvoy/agentvoy) project | `skills/` |
 
 Install the CLI once (`npm i -g @aiskillet/cli`) or use `npx`. Requires Node 20+.
 
