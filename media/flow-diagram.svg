@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#fb703a" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#b7b7b7"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9a5a"/><stop offset="100%" stop-color="#fb703a"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#fb703a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#0a0a0a"/>
+  <rect width="1200" height="1200" fill="url(#glow)"/>
+
+  <!-- title -->
+  <text x="600" y="120" text-anchor="middle" font-size="66" font-weight="800" letter-spacing="-2.5" fill="url(#ink)">One skill. <tspan fill="#fb703a">Every tool.</tspan></text>
+  <text x="600" y="176" text-anchor="middle" font-size="27" fill="#a0a0a0">Write it once — AISkillet compiles it into each tool's native format.</text>
+
+  <!-- connectors: source -> compiler -->
+  <line x1="352" y1="600" x2="470" y2="600" stroke="#fb703a" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- compiler -> 4 targets -->
+  <g stroke="#fb703a" stroke-width="3" fill="none">
+    <path d="M760,600 C820,600 800,432 858,432" marker-end="url(#arrow)"/>
+    <path d="M760,600 C820,600 800,545 858,545" marker-end="url(#arrow)"/>
+    <path d="M760,600 C820,600 800,658 858,658" marker-end="url(#arrow)"/>
+    <path d="M760,600 C820,600 800,771 858,771" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- source node -->
+  <g transform="translate(112,540)">
+    <rect x="0" y="0" width="240" height="120" rx="16" fill="#151311" stroke="#3a2f28" stroke-width="2"/>
+    <text x="120" y="52" text-anchor="middle" font-size="26" font-weight="700" font-family="'JetBrains Mono',monospace" fill="#ededed">SKILL.md</text>
+    <text x="120" y="86" text-anchor="middle" font-size="19" fill="#8a8a8a">your capability, once</text>
+  </g>
+
+  <!-- compiler node -->
+  <g transform="translate(490,540)">
+    <rect x="0" y="0" width="270" height="120" rx="16" fill="#1a0f09" stroke="#fb703a" stroke-width="2.5"/>
+    <text x="135" y="50" text-anchor="middle" font-size="26" font-weight="800" fill="#ff9a5a">🍳 skillet</text>
+    <text x="135" y="84" text-anchor="middle" font-size="18" font-family="'JetBrains Mono',monospace" fill="#a0a0a0">add --target …</text>
+  </g>
+
+  <!-- target nodes -->
+  <g font-size="24" font-weight="700" fill="#ededed">
+    <g transform="translate(858,388)"><rect width="290" height="88" rx="14" fill="#151311" stroke="#3a2f28" stroke-width="2"/>
+      <text x="28" y="42">Claude Code</text><text x="28" y="68" font-size="16" font-weight="400" font-family="'JetBrains Mono',monospace" fill="#8a8a8a">.claude/skills/</text></g>
+    <g transform="translate(858,501)"><rect width="290" height="88" rx="14" fill="#151311" stroke="#3a2f28" stroke-width="2"/>
+      <text x="28" y="42">Cursor</text><text x="28" y="68" font-size="16" font-weight="400" font-family="'JetBrains Mono',monospace" fill="#8a8a8a">.cursor/rules/*.mdc</text></g>
+    <g transform="translate(858,614)"><rect width="290" height="88" rx="14" fill="#151311" stroke="#3a2f28" stroke-width="2"/>
+      <text x="28" y="42">AGENTS.md</text><text x="28" y="68" font-size="16" font-weight="400" font-family="'JetBrains Mono',monospace" fill="#8a8a8a">.agents/</text></g>
+    <g transform="translate(858,727)"><rect width="290" height="88" rx="14" fill="#151311" stroke="#3a2f28" stroke-width="2"/>
+      <text x="28" y="42">AgentVoy</text><text x="28" y="68" font-size="16" font-weight="400" font-family="'JetBrains Mono',monospace" fill="#8a8a8a">skills/</text></g>
+  </g>
+
+  <!-- caption -->
+  <text x="600" y="960" text-anchor="middle" font-size="26" fill="#a0a0a0">Same source. Compiled to each tool — <tspan fill="#ededed" font-weight="600">technology-agnostic</tspan>, one command.</text>
+  <g transform="translate(410,1000)">
+    <rect x="0" y="0" width="380" height="64" rx="14" fill="#050505" stroke="#2a2320" stroke-width="1.5"/>
+    <text x="24" y="41" font-size="22" font-family="'JetBrains Mono',monospace" fill="#fb703a">$</text>
+    <text x="48" y="41" font-size="22" font-family="'JetBrains Mono',monospace" fill="#ededed">skillet add &lt;name&gt;</text>
+  </g>
+
+  <!-- footer -->
+  <text x="600" y="1140" text-anchor="middle" font-size="38" font-weight="800" letter-spacing="-1.5" fill="#ededed">aiskillet<tspan fill="#fb703a">.com</tspan></text>
+</svg>

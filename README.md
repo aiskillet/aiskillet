@@ -72,6 +72,15 @@ npx @aiskillet/cli search testing
 
 Install the CLI once (`npm i -g @aiskillet/cli`) or use `npx`. Requires Node 20+.
 
+**Not a walled garden.** You don't have to be in the marketplace to use it:
+
+```bash
+skillet add owner/repo/path --target cursor          # install straight from ANY repo
+export SKILLET_REGISTRY=https://skills.yourco.com/index.json   # or run your own private registry
+```
+
+Your code stays in your repo (catalog-not-host). List it here when you want reach — or don't.
+
 ## Security — built in, not bolted on
 
 A skill isn't passive data: it's **instructions that steer an AI agent in your environment with real permissions.** That's a threat model npm doesn't have — so we designed for it from day one. Full model: [`architecture/SECURITY.md`](architecture/SECURITY.md).
