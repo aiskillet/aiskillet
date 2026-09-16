@@ -22,7 +22,8 @@ const SCHEMA_PATH = join(ROOT, "schema", "entry.schema.json");
 const INSTALL_ALLOW = /^\/(plugin|skill|agent|mcp)\s+[\w@/.\- ]+$/;
 // MCP servers install via `claude mcp add … -- <runner> <pkg> [args]` (mcp type only).
 const INSTALL_ALLOW_MCP = /^claude mcp add [\w@/.\-~ ]+$/;
-const INSTALL_DENY = /(curl|wget|bash|sh\s+-c|eval|base64|\||;|&&|`|\$\()/i;
+// Word-boundaried so legit names like "source-evaluation" (contains "eval") aren't false-flagged.
+const INSTALL_DENY = /(\bcurl\b|\bwget\b|\bbash\b|\bsh\s+-c|\beval\b|\bbase64\b|\||;|&&|`|\$\()/i;
 
 function loadJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
