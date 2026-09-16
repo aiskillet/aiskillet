@@ -1,0 +1,22 @@
+{
+  "name": "observability-pack",
+  "type": "plugin",
+  "category": "devops",
+  "title": "Observability Pack",
+  "description": "Keep systems fast and reliable — observability & SLOs, load testing, incident response — plus the performance-optimizer agent, in one install.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/observability-pack",
+  "install": "/plugin install observability-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "reliability", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "observability-slos" },
+    { "type": "skill", "name": "load-testing" },
+    { "type": "skill", "name": "incident-response" },
+    { "type": "agent", "name": "performance-optimizer" }
+  ],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

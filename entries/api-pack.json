@@ -1,0 +1,24 @@
+{
+  "name": "api-pack",
+  "type": "plugin",
+  "category": "coding",
+  "title": "API Pack",
+  "description": "Everything for designing, integrating, and documenting APIs — design, client patterns, webhooks, OAuth, docs — plus the API-designer agent, in one install.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "plugins/api-pack",
+  "install": "/plugin install api-pack@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "api", "bundle"],
+  "includes": [
+    { "type": "skill", "name": "api-design" },
+    { "type": "skill", "name": "api-client-patterns" },
+    { "type": "skill", "name": "webhook-design" },
+    { "type": "skill", "name": "oauth-flows" },
+    { "type": "skill", "name": "api-docs" },
+    { "type": "agent", "name": "api-designer" }
+  ],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

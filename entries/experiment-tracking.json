@@ -1,0 +1,16 @@
+{
+  "name": "experiment-tracking",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Experiment Tracking",
+  "description": "Make ML experiments reproducible and comparable — log params, data version, code, metrics, and artifacts. Use when running ML experiments or you can't reproduce a past result.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/experiment-tracking",
+  "install": "/plugin install experiment-tracking@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "ml", "reproducibility"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

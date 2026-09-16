@@ -1,0 +1,16 @@
+{
+  "name": "incident-response",
+  "type": "skill",
+  "category": "devops",
+  "title": "Incident Response",
+  "description": "Handle production incidents calmly — stabilize first, communicate, then fix root cause and run a blameless postmortem. Use during or after an outage.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/incident-response",
+  "install": "/plugin install incident-response@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "reliability", "oncall"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

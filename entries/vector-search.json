@@ -1,0 +1,16 @@
+{
+  "name": "vector-search",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Vector Search",
+  "description": "Build semantic/vector search that returns relevant results — embeddings, ANN indexes, metadata filtering, and hybrid search. Use when adding similarity search or a vector DB.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/vector-search",
+  "install": "/plugin install vector-search@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "search", "llm"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

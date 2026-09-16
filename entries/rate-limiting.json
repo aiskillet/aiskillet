@@ -1,0 +1,16 @@
+{
+  "name": "rate-limiting",
+  "type": "skill",
+  "category": "integrations",
+  "title": "Rate Limiting",
+  "description": "Protect and fairly share an API with rate limits — pick an algorithm, choose keys/limits, and return clear 429s. Use when adding rate limiting or defending against abuse/overload.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/rate-limiting",
+  "install": "/plugin install rate-limiting@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["integrations", "api", "reliability"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

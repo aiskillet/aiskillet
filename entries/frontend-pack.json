@@ -3,7 +3,7 @@
   "type": "plugin",
   "category": "design",
   "title": "Frontend Pack",
-  "description": "Build coherent, accessible UI in one install: design systems and accessibility (a11y).",
+  "description": "Build coherent, accessible, well-structured UI in one install: design systems, tokens, component APIs, responsive layout, UX writing, empty states — plus the accessibility-auditor agent.",
   "author": "github:aiskillet",
   "repo": "https://github.com/aiskillet/cookbook",
   "path": "plugins/frontend-pack",
@@ -12,7 +12,13 @@
   "tags": ["design", "frontend", "bundle"],
   "includes": [
     { "type": "skill", "name": "design-systems" },
-    { "type": "skill", "name": "accessibility-a11y" }
+    { "type": "skill", "name": "design-tokens" },
+    { "type": "skill", "name": "component-api-design" },
+    { "type": "skill", "name": "responsive-layout" },
+    { "type": "skill", "name": "ux-writing" },
+    { "type": "skill", "name": "empty-states" },
+    { "type": "skill", "name": "accessibility-a11y" },
+    { "type": "agent", "name": "accessibility-auditor" }
   ],
   "license": "MIT",
   "verified": true,

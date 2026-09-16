@@ -1,0 +1,16 @@
+{
+  "name": "terraform-patterns",
+  "type": "skill",
+  "category": "devops",
+  "title": "Terraform Patterns",
+  "description": "Write maintainable, safe Terraform — modules, remote state, plan-before-apply, and no hardcoded secrets. Use when writing/reviewing IaC or debugging drift.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/terraform-patterns",
+  "install": "/plugin install terraform-patterns@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "terraform", "iac"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

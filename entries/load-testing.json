@@ -1,0 +1,16 @@
+{
+  "name": "load-testing",
+  "type": "skill",
+  "category": "devops",
+  "title": "Load Testing",
+  "description": "Find capacity and breaking points before users do — realistic scenarios, ramp profiles, and the right metrics. Use before a launch, capacity planning, or after perf changes.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/load-testing",
+  "install": "/plugin install load-testing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["devops", "performance", "reliability"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

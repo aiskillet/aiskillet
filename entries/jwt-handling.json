@@ -1,0 +1,16 @@
+{
+  "name": "jwt-handling",
+  "type": "skill",
+  "category": "security",
+  "title": "JWT Handling",
+  "description": "Use JWTs securely — verify signatures and claims, pick the right algorithm, and store/expire tokens safely. Use when implementing token auth or reviewing JWT code.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/jwt-handling",
+  "install": "/plugin install jwt-handling@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "auth", "jwt"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

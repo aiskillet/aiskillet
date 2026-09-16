@@ -1,0 +1,16 @@
+{
+  "name": "model-evaluation",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Model Evaluation",
+  "description": "Evaluate ML/LLM models honestly — right metrics, proper splits, baselines, and error analysis. Use when assessing a model, comparing approaches, or debugging poor real-world performance.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/model-evaluation",
+  "install": "/plugin install model-evaluation@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "ml", "evaluation"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}
