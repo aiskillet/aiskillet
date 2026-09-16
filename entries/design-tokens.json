@@ -1,0 +1,16 @@
+{
+  "name": "design-tokens",
+  "type": "skill",
+  "category": "design",
+  "title": "Design Tokens",
+  "description": "Define and use design tokens — named, semantic values for color, space, type — so UI stays consistent and themeable. Use when setting up a token system or theming.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/design-tokens",
+  "install": "/plugin install design-tokens@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "tokens", "frontend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "accessibility-auditor",
+  "type": "agent",
+  "category": "design",
+  "title": "Accessibility Auditor",
+  "description": "Audits UI code for accessibility issues — semantics, keyboard, focus, contrast, labels, ARIA — with concrete, prioritized fixes. Use to a11y-review a component or page.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/accessibility-auditor",
+  "install": "/plugin install accessibility-auditor@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "accessibility", "review"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "seo-basics",
+  "type": "skill",
+  "category": "writing",
+  "title": "SEO Basics",
+  "description": "Get pages found and ranked — search intent, titles/meta, structure, performance, and technical basics. Use when publishing content, building marketing pages, or auditing a site for SEO.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/seo-basics",
+  "install": "/plugin install seo-basics@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "seo", "marketing"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

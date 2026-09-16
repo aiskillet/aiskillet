@@ -1,0 +1,16 @@
+{
+  "name": "blog-post-structure",
+  "type": "skill",
+  "category": "writing",
+  "title": "Blog Post Structure",
+  "description": "Structure a blog post that gets read and finished — strong hook, scannable body, one takeaway. Use when writing a technical or product blog post, or fixing one that drags.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/blog-post-structure",
+  "install": "/plugin install blog-post-structure@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "content", "marketing"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "performance-optimizer",
+  "type": "agent",
+  "category": "coding",
+  "title": "Performance Optimizer",
+  "description": "Diagnoses and fixes performance problems by measuring first — profiles, finds the real bottleneck, fixes it, and confirms the win. Use when something is slow.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/performance-optimizer",
+  "install": "/plugin install performance-optimizer@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "performance", "optimization"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

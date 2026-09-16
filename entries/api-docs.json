@@ -1,0 +1,16 @@
+{
+  "name": "api-docs",
+  "type": "skill",
+  "category": "writing",
+  "title": "API Documentation",
+  "description": "Write API docs developers can actually use — quickstart, real request/response examples, auth, errors, and pagination. Use when documenting an API/SDK or reviewing reference docs.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/api-docs",
+  "install": "/plugin install api-docs@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["writing", "docs", "api"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

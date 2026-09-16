@@ -1,0 +1,16 @@
+{
+  "name": "component-api-design",
+  "type": "skill",
+  "category": "design",
+  "title": "Component API Design",
+  "description": "Design UI component APIs (props) that are intuitive, composable, and hard to misuse. Use when building a reusable component or reviewing its props/interface.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/component-api-design",
+  "install": "/plugin install component-api-design@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "frontend", "components"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "migration-assistant",
+  "type": "agent",
+  "category": "coding",
+  "title": "Migration Assistant",
+  "description": "Plans and executes safe migrations — dependency/framework upgrades, API changes, schema moves — in small, reversible, verified steps. Use when upgrading or migrating anything risky.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/migration-assistant",
+  "install": "/plugin install migration-assistant@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "migration", "maintenance"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

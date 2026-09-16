@@ -1,0 +1,16 @@
+{
+  "name": "api-designer",
+  "type": "agent",
+  "category": "coding",
+  "title": "API Designer",
+  "description": "Designs and reviews HTTP/JSON endpoints — resources, status codes, errors, pagination, idempotency, versioning — matched to your project's conventions. Use when adding or changing an API.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "agents/api-designer",
+  "install": "/plugin install api-designer@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "api", "backend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}

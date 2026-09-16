@@ -1,0 +1,16 @@
+{
+  "name": "empty-states",
+  "type": "skill",
+  "category": "design",
+  "title": "Empty, Loading & Error States",
+  "description": "Design empty, loading, and error states that guide users instead of dead-ending them. Use when building any view that can have no data, be loading, or fail.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/empty-states",
+  "install": "/plugin install empty-states@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["design", "ux", "frontend"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-16"
+}
