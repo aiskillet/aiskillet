@@ -1,0 +1,16 @@
+{
+  "name": "concurrency-patterns",
+  "type": "skill",
+  "category": "coding",
+  "title": "Concurrency Patterns",
+  "description": "Write correct concurrent code — avoid races, deadlocks, and shared-state bugs with the right primitives. Use when adding threads/async, sharing state, or debugging a heisenbug.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/concurrency-patterns",
+  "install": "/plugin install concurrency-patterns@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "concurrency", "reliability"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

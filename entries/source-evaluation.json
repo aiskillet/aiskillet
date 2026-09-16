@@ -1,0 +1,16 @@
+{
+  "name": "source-evaluation",
+  "type": "skill",
+  "category": "research",
+  "title": "Source Evaluation",
+  "description": "Judge whether a source is trustworthy — authority, evidence, bias, and recency — before you rely on it. Use when researching, fact-checking, or citing anything online.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/source-evaluation",
+  "install": "/plugin install source-evaluation@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "fact-checking", "credibility"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

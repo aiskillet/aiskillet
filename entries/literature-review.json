@@ -1,0 +1,16 @@
+{
+  "name": "literature-review",
+  "type": "skill",
+  "category": "research",
+  "title": "Literature Review",
+  "description": "Survey a body of work systematically — find key sources, synthesize themes, and map the gap. Use when researching a topic deeply, writing background, or scoping prior art.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/literature-review",
+  "install": "/plugin install literature-review@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "synthesis", "writing"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

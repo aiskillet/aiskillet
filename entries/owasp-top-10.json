@@ -1,0 +1,16 @@
+{
+  "name": "owasp-top-10",
+  "type": "skill",
+  "category": "security",
+  "title": "OWASP Top 10",
+  "description": "Check web apps against the most common, highest-impact security risks (OWASP Top 10) with concrete defenses. Use when building or reviewing a web app or API for security.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/owasp-top-10",
+  "install": "/plugin install owasp-top-10@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["security", "web", "owasp"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

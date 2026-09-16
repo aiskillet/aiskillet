@@ -1,0 +1,16 @@
+{
+  "name": "git-workflow",
+  "type": "skill",
+  "category": "coding",
+  "title": "Git Workflow",
+  "description": "Keep git history clean and collaboration smooth — small commits, good messages, sane branching, and safe rebases. Use when committing, branching, reviewing, or untangling git.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/git-workflow",
+  "install": "/plugin install git-workflow@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "git", "workflow"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

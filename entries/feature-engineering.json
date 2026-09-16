@@ -1,0 +1,16 @@
+{
+  "name": "feature-engineering",
+  "type": "skill",
+  "category": "data-ml",
+  "title": "Feature Engineering",
+  "description": "Turn raw data into features that make models work — encoding, scaling, leakage prevention, and selection. Use when building an ML model, debugging performance, or preparing a dataset.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/feature-engineering",
+  "install": "/plugin install feature-engineering@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["data-ml", "ml", "data"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

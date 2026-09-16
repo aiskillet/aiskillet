@@ -1,0 +1,16 @@
+{
+  "name": "caching-strategies",
+  "type": "skill",
+  "category": "coding",
+  "title": "Caching Strategies",
+  "description": "Cache for speed without serving stale or wrong data — pick the right layer, keys, TTLs, and invalidation. Use when adding a cache or debugging stale/inconsistent data.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/caching-strategies",
+  "install": "/plugin install caching-strategies@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "performance", "caching"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

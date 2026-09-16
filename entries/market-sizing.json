@@ -1,0 +1,16 @@
+{
+  "name": "market-sizing",
+  "type": "skill",
+  "category": "research",
+  "title": "Market Sizing",
+  "description": "Estimate a market with TAM/SAM/SOM using top-down and bottom-up methods that reconcile. Use when sizing an opportunity, writing a deck, or sanity-checking a business case.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/market-sizing",
+  "install": "/plugin install market-sizing@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "business", "strategy"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "survey-design",
+  "type": "skill",
+  "category": "research",
+  "title": "Survey Design",
+  "description": "Design surveys that yield unbiased, usable data — clear goals, neutral questions, right scales, and good sampling. Use when writing a survey, feedback form, or questionnaire.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/survey-design",
+  "install": "/plugin install survey-design@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["research", "surveys", "product"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}

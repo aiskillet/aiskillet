@@ -1,0 +1,16 @@
+{
+  "name": "performance-profiling",
+  "type": "skill",
+  "category": "coding",
+  "title": "Performance Profiling",
+  "description": "Make code faster by measuring, not guessing — profile, find the real bottleneck, fix it, and confirm. Use when something is slow or you're tempted to optimize.",
+  "author": "github:aiskillet",
+  "repo": "https://github.com/aiskillet/cookbook",
+  "path": "skills/performance-profiling",
+  "install": "/plugin install performance-profiling@aiskillet",
+  "targets": ["claude-code"],
+  "tags": ["coding", "performance", "optimization"],
+  "license": "MIT",
+  "verified": true,
+  "createdAt": "2026-09-15"
+}
